@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+            *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+    font-family: "Open Sans", sans-serif;
+    color: #4d4643;
+}
+    /* #header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.bi-chevron-down::before {
+    content: "\f282";
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#header .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.me-auto {
+    margin-right: auto !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+}
+#header .logo a {
+    color: #111;
+}
+#header .logo a span {
+    color: #1bbd36;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar li {
+    position: relative;
+} */
+.breadcrumbs {
+    padding: 15px 0;
+    background: #1bbd36;
+    min-height: 40px;
+    margin-top: 72px;
+  
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    
+}
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+.d-flex {
+    display: flex !important;
+    width: 80%;
+    margin: auto;
+}
+.breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 300;
+    color: #fff;
+    
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #fff;
+    content: "/";
+}
+a{
+   text-decoration: none;
+   /* color: #fff; */
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+    color: #fff;
+    background: #1bbd36;
+}
+.portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #4d4643;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+.portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 50px auto;
+    list-style: none;
+    text-align: center;
+}
+.portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+}
+/* .fourth-all-content{
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+.first-img{
+    background-image: url(./portfolio/portfolio-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-bottom: 25px;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+}
+.first-img:hover{
+    box-shadow: -1px 12px 24px 4px rgba(0, 0, 0, 0.2);
+}
+.first-img:hover .in-img-1{
+    display: block;
+}
+.in-img-1{
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    right: 5%;
+    height: 80px;
+    width: 90%;
+    transition: all ease-in-out 0.3s;
+    background: rgba(225, 255, 255, 0.9);
+    padding: 15px;
+}
+.the-h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+.the-p{
+    color: #444444;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.pluss{
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+}
+.pluss a{
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+}
+.pluss a:hover{
+    color: #1bbd36;
+} */
+</style>
+<body>
+    
+
+<header id="header" class="flex-top">
+
+
+    <div class="container d-flex align-items-center">
+   <h1  class="logo me-auto">
+    <a href="index.html"><span>COM</span>PANY</a>
+   </h1>
+   
+       <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+           <li> <a href="index.html" class="active">HOME</a></li>
+            <li class="dropdown">  <a href="#"><span>ABOUT</span>
+                <i class="bi bi-chevron"></i>
+            </a>
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                <li class="dropdown"><a href="#"><span>DEEP DROP DOWN</span>
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+                <ul>
+                    <li><a href="#">DEEP DROP DOWN 1</a></li>
+                    <li><a href="#">DEEP DROP DOWN 2</a></li>
+                    <li><a href="#">DEEP DROP DOWN 3</a></li>
+                    <li><a href="#">DEEP DROP DOWN 4</a></li>
+                    <li><a href="#">DEEP DROP DOWN 5</a></li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+            <li>  <a href="services">SERVICES</a></li>
+            <li> <a href="portfolio">PROTFOLIO</a></li>
+            <li><a href="Pricing">PRICING</a></li>
+            <li> <a href="Bolg">BLOG</a></li>
+            <li> <a href="Contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+       </nav>
+       
+    <!-- navbar -->
+       <div class="header-social-links d-flex">
+        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+       </div>
+      </div>
+      </div>
+     </div> 
+    </header>
+    
+    <section id="breadcrumbs" class="breadcrumbs">
+     <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+       <h2>PROTFOLIO</h2>
+       <ol>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="portfolio.html"></a>PROTFOLIO</li>
+       </ol>
+      </div>
+     </div>
+    </section>
+
+
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+        <div class="row aos-init aos-animate" data-aos="fade-up">
+        <div class="col-ig-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">App</li>
+        <li data-filter="filter-card">Crad</li>
+        <li data-filter="filter-web">Web</li>
+        
+        </ul>
+        
+        </div>
+        
+        </div>
+        
+        </div>
+        </section>
+
+
+<!-- <div class="fourth-all-content">
+<div class="first-colum">
+<div class="first-img"> 
+</div>
+<div class="second-img">
+<div class="in-img-2">
+<h4 class="the-h4"> App 1</h4>
+<p class="the-p">App</p>
+<div class="pluss">
+<a href="#"><i class="fa-solid fa-plus"></i></a>
+<a href="#"><i class="fa-solid fa-link"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="second-colum">
+<div class="thrid-img">
+<div class="in-img-3">
+<h4 class="the-h4">App 1</h4> 
+<p class="the-p">App</p> 
+<a href="#"><i class="fa-solid fa-plus"></i></a>
+<a href="#"><i class="fa-solid fa-link"></i></a>
+</div>    
+</div>  
+</div>
+</div> -->
+</body>
+</html>
